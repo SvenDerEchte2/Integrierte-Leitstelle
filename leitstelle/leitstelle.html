@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Integrierte Leitstelle - Fahrzeug besetzen</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #2b0d0d, #4a1c1c);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #b30000;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      user-select: none;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="time"],
+    textarea {
+      margin-top: 5px;
+      padding: 8px 10px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      background-color: #3a1a1a;
+      color: #eee;
+      box-shadow: inset 0 0 5px #000000aa;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 80px;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Fahrzeug besetzen
+</header>
+
+<main>
+  <label for="ezeit">E-Zeit</label>
+  <input type="time" id="ezeit" name="ezeit" />
+
+  <label for="strasse">Straße</label>
+  <input type="text" id="strasse" name="strasse" />
+
+  <label for="zusatz">Zusatz</label>
+  <input type="text" id="zusatz" name="zusatz" />
+
+  <label for="ort">Ort</label>
+  <input type="text" id="ort" name="ort" />
+
+  <label for="stadtteil">Stadtteil</label>
+  <input type="text" id="stadtteil" name="stadtteil" />
+
+  <label for="meldernr">MelderNr</label>
+  <input type="text" id="meldernr" name="meldernr" />
+
+  <label for="objekt">Objekt</label>
+  <input type="text" id="objekt" name="objekt" />
+
+  <label for="meldebild">Meldebild</label>
+  <input type="text" id="meldebild" name="meldebild" />
+
+  <label for="stichwort">Stichwort</label>
+  <input type="text" id="stichwort" name="stichwort" />
+
+  <label for="latlng">Lat / Lng</label>
+  <input type="text" id="latlng" name="latlng" />
+
+  <label for="zielabt">Ziel / Abt</label>
+  <input type="text" id="zielabt" name="zielabt" />
+
+  <label for="zielstr">Ziel Str.</label>
+  <input type="text" id="zielstr" name="zielstr" />
+
+  <label for="strzusatz">Str-Zusatz</label>
+  <input type="text" id="strzusatz" name="strzusatz" />
+
+  <label for="zielort">Ziel Ort</label>
+  <input type="text" id="zielort" name="zielort" />
+</main>
+
+</body>
+</html>
